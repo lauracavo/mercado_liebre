@@ -150,6 +150,9 @@ main div article i {
   bottom: 15px;
   transition: all 0.5s;
 }
+.descripcion-oculta {
+   display: none;
+}
 
 /* ------------------FOOTER------------------------ */
 footer {
@@ -177,19 +180,15 @@ div#copyright p {
 }
 
 /* ------------------MEDIA QUERIES-------------------- */
-@media (min-width: 361px) {
-  .oculto {
-    display: block;
-  }
+
+@media (min-width: 769px) {
   #menu_hamb {
     display: none;
   }
   main div article i {
     right: 30px;
-    bottom: 55px;
+    bottom: 40px;
   }
-}
-@media (min-width: 769px) {
   .contenedor_productos {
     display: flex;
     flex-wrap: wrap;
@@ -252,6 +251,7 @@ div#copyright p {
     position: relative;
   }
   .descripcion-oculta {
+    display: block;
     color: white;
     position: absolute;
     top: 100%;
