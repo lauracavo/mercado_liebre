@@ -1,0 +1,35 @@
+.formulario{
+    margin: 20px 0;
+}
+.formulario div{
+    flex-direction: column;
+}
+label.titulo{
+   font-size: 14px;
+   font-weight: 500;
+   display: flex;
+   justify-content: center;
+   margin: 5px;
+   color: #666;
+}
+main input{
+    margin: 5px 20px;
+    border-radius: 2px;
+    height: 25px;
+    padding-left: 10px;
+}
+.formulario div.botones{
+    flex-direction: row;
+    justify-content: space-around;
+}
+.formulario div.botones input{
+    padding: 5px;
+    border-radius: 8px;
+}
+input#submit{
+    transition: all 0.5s;
+}
+input#submit:hover{
+    background-color: #0022AA;
+    color: white;
+}

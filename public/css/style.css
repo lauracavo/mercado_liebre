@@ -110,6 +110,7 @@ h3.titulares {
   background-color: white;
   margin-bottom: 10px;
   position: relative;
+  transition: all 0.5s;
 }
 .product img {
   border-bottom: 2px solid #ebebeb;
@@ -147,9 +148,7 @@ main div article i {
   position: absolute;
   right: 20px;
   bottom: 15px;
-}
-.descripciones {
-  display: none;
+  transition: all 0.5s;
 }
 
 /* ------------------FOOTER------------------------ */
@@ -179,14 +178,6 @@ div#copyright p {
 
 /* ------------------MEDIA QUERIES-------------------- */
 @media (min-width: 361px) {
-  .descripciones {
-    display: block;
-    text-align: center;
-    font-size: 16px;
-  }
-  .product {
-    box-shadow: 0px 0px 10px 0px rgb(100, 100, 100);
-  }
   .oculto {
     display: block;
   }
@@ -240,19 +231,49 @@ div#copyright p {
   }
 }
 @media (min-width: 1024px) {
-  article.product {
-    width: 22%;
-    height: max-content;
-  }
+
   main div article i {
-    bottom: 70px;
+    bottom: 20px;
+    right: 10px;
   }
   .precios,
   .descuentos {
     width: 50%;
     padding-top: 10px;
   }
-  .descripciones {
-    margin-top: 10px;
+  main div article i:hover{
+    transform: rotate(-90deg);
+  }
+  article.product {
+    width: 22%;
+    height: 320px;
+  }
+  .informacion {
+    position: relative;
+  }
+  .descripcion-oculta {
+    color: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 5px;
+    font-size: 16px;
+    transition: all 0.7s;
+  }
+  .product:hover {
+    height: 320px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgb(100, 100, 100);
+  }
+  .product:hover .descripcion-oculta {
+    color: black;
+  }
+
+  footer section i{
+    transition: all 0.5s;
+  }
+  footer section i:hover{
+    cursor: pointer;
+    color: #39b54a;
   }
 }
