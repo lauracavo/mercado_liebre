@@ -43,11 +43,11 @@
             </ul>
             <ul class="display_flex" id="menu_cliente"> 
                 <div class="display_flex" class="div_cliente">
-                    <li><a href="">Creá tu cuenta</a></li>
+                    <li><a href="/register">Creá tu cuenta</a></li>
                     <i class="far fa-id-card" id="icon_2"></i>
                 </div>
                 <div class="display_flex" class="div_cliente">
-                    <li><a href="">Ingresá</a></li>
+                    <li><a href="/login">Ingresá</a></li>
                     <i class="fas fa-sign-in-alt" id="icon_2"></i>
                 </div>
                 <div class="display_flex" class="div_cliente">
@@ -64,13 +64,14 @@
 </header>
 <main>
   <form action="/views/register" method="post" class="formulario">
+    <h4>Ingresá a tu cuenta</h4>
     <div class="display_flex">
       <label for="user_name" class="titulo">Nombre de usuario</label>
-      <input type="text" id="user_name" name="user_name" placeholder="Nombre de usuario"/>
+      <input required type="text" id="user_name" name="user_name" placeholder="Nombre de usuario"/>
     </div>
     <div class="display_flex">
         <label for="password" class="titulo">Contraseña</label>
-        <input type="password" id="password" name="password" placeholder="Contraseña"/>
+        <input required type="password" id="password" name="password" placeholder="Contraseña"/>
     </div>
     <div class="display_flex botones">
         <label for="submit"><input type="submit" name="submit" id="submit" value="Enviar"></label>

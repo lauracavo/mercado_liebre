@@ -1,35 +1,44 @@
-.formulario{
-    margin: 20px 0;
+.formulario {
+  margin: 20px auto;
+  max-width: 500px;
+  font-size: 14px;
 }
-.formulario div{
-    flex-direction: column;
+h4 {
+  font-size: 20px;
+  color: #666;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }
-label.titulo{
-   font-size: 14px;
-   font-weight: 500;
-   display: flex;
-   justify-content: center;
-   margin: 5px;
-   color: #666;
+.formulario div {
+  flex-direction: column;
 }
-main input{
-    margin: 5px 20px;
-    border-radius: 2px;
-    height: 25px;
-    padding-left: 10px;
+label.titulo {
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  color: #666;
 }
-.formulario div.botones{
-    flex-direction: row;
-    justify-content: space-around;
+main input {
+  margin: 5px 20px;
+  border-radius: 2px;
+  height: 25px;
+  padding-left: 10px;
 }
-.formulario div.botones input{
-    padding: 5px;
-    border-radius: 8px;
+.formulario div.botones {
+  flex-direction: row;
+  justify-content: space-around;
 }
-input#submit{
-    transition: all 0.5s;
+.formulario div.botones input {
+  padding: 5px;
+  border-radius: 8px;
 }
-input#submit:hover{
-    background-color: #0022AA;
-    color: white;
+input#submit {
+  transition: all 0.5s;
+}
+input#submit:hover {
+  background-color: #0022aa;
+  color: white;
 }

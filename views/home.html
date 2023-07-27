@@ -18,14 +18,12 @@
 <body>
     <header>
         <img src="/images/logo-mercado-liebre.svg" alt="Logo del sitio" id="logo" />
-        <div id="busqueda">
-            <div id="barra_busqueda" class="display_flex align_center justify_center">
-                <form action="#" method="POST">
-                    <input id="input_busqueda" type="search" placeholder="Busqueda">
+        <div id="form_busqueda">
+            <div id="busqueda" class="display_flex">
+                <form id="search_box" class="display_flex">
+                    <input type="text" placeholder="Buscar productos, marcas y más">
+                    <button type="submit"><i class="fas fa-search" id="search-icon"></i></button>
                 </form>
-                <div>
-                    <i class="fas fa-search" id="search-icon"></i>
-                </div>
             </div>
             <div id="frase_cuotas" class="display_flex justify_center">
                 <i class="fas fa-hand-holding-usd" id="icon_hand"></i>
@@ -43,11 +41,11 @@
                 </ul>
                 <ul class="display_flex" id="menu_cliente"> 
                     <div class="display_flex" class="div_cliente">
-                        <li><a href="">Creá tu cuenta</a></li>
+                        <li><a href="/views/register">Creá tu cuenta</a></li>
                         <i class="far fa-id-card" id="icon_2"></i>
                     </div>
                     <div class="display_flex" class="div_cliente">
-                        <li><a href="">Ingresá</a></li>
+                        <li><a href="/views/login">Ingresá</a></li>
                         <i class="fas fa-sign-in-alt" id="icon_2"></i>
                     </div>
                     <div class="display_flex" class="div_cliente">
